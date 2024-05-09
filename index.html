@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/materialize.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Random Coffee</title>
+</head>
+<body  style="background-color: rgb(26, 44, 43)">
+  <div class="container">
+    <div class="card" style="background-color: rgb(58, 95, 92)">
+      <div class="card-grid">
+        <div class="text-card">Анонс тура</div>
+        <p>Город ▼</p>
+        <form onsubmit="document.getElementById('naz').blur();">
+            <input style='width:200px;max-width: 250px;margin: 0 auto;color:#ffffff; ' type="text" id="city" required/>
+        </form>
+        
+        <p>Дата начала▼</p>
+        <input type="date" style='width:200px;max-width: 250px;margin: 0 auto; color:#ffffff;' id="date1" />
+        <p>Дата окончания▼</p>
+        <input type="date" style='width:200px;max-width: 250px;margin: 0 auto; color:#ffffff;' id="date2" />
+
+        
+        <p>Описание тура ▼</p>
+        <form onsubmit="document.getElementById('TITLE').blur();">
+          <textarea style="width:300px; height:150px;color:#ffffff;;" rows="1" cols="5" id="desc"></textarea>
+        </form>
+        
+      
+        <div class="input-field col s12">
+          <p>Формат путешествия ▼</p>
+          <form onsubmit="document.getElementById('local').blur();">
+            <select style='width:170px' id="cost">
+              <option value="0">Поход</option>
+              <option value="300">Пвд</option>
+              <option value="500">Джип тур</option>
+              <option value="700">
+                Экстрим тур
+              </option>
+              <option value="900">Сплав</option>
+              <option value="1200">Восхождение</option>
+            </select>
+          </form>
+        </div>
+        <div class="input-field col s13">
+          <p>Количество мест ▼</p>
+          <input style='width:200px;max-width: 250px;margin: 0 auto;color:#ffffff; ' type="number" id="count_mt" required/>
+        </div>
+        <div class="input-field col s13">
+          <p>Стоимость ▼</p>
+          <input style='width:200px;max-width: 250px;margin: 0 auto;color:#ffffff; ' type="number" id="cost" required/>
+        </div>
+        <div class="button-card" id="btn"><a class="a-card">Отправить</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script/app.js"></script>
+  
+</body>
+</html>
+

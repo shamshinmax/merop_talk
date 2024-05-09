@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+  
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  
+}
+img {
+  display: block;
+  width: 100%;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'arial black', bold;
+  color:#ffffff;
+  font-weight: 400;
+  
+}
+h1, h2, h3, h4, h5, h6, a, hr {
+  
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-size: 16px;
+
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+.container {
+  padding-top: 7%;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.card {
+  padding: 85px 25px;
+  max-width: 350px;
+  margin: auto;
+
+  border-radius: 10px;
+  
+}
+.card-grid {
+  display: grid;
+  text-align: center;
+  
+}
+.a-card {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  background-color: rgb(31,53,51);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+}
+.a-card:hover {
+  cursor: pointer;
+  background-color: rgb(43, 70, 67);
+  color: #ffffff
+  
+}
+.text-card{
+  font-size: 20px;
+  
+}
+.time-card{
+  border-radius: 10px;
+}
