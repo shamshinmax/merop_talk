@@ -23,7 +23,7 @@ btn.addEventListener("click", function(){
     let date1 = document.getElementById("date1").value;
     let date2 = document.getElementById("date2").value;
     let desc = document.getElementById("desc").value
-    let count = document.getElementById("count").value
+    let count = document.getElementById("count_mt").value
     let cost = document.getElementById("cost").value
     if (city != "" && type != "" && date2 != "" && date1 != "" && desc != "" && count != "" &&cost != ""){
         tg.sendData(city+"^"+type+"^"+date2+"^"+date1+"^"+ desc + "^" + count + "^" + cost);
